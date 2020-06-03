@@ -1,0 +1,31 @@
+Setup:
+
+- Add the FrostEffect-script to a camera, and make sure the Frost-image and shader are correctly assigned.
+
+Usage:
+
+- Change the amount of frost by changing the value of FrostAmount. 
+  0 means minimum frost, 1 means maximum frost.
+
+Tweaking the parameters (not necessary):
+
+- Leave Min Frost and Max Frost at their initial values at first (0 and 1 respectively)
+- Change the value of Edge Sharpness (minimum 1, maximum infinite) until you have the desired sharpness.
+  test this with a couple of values for Frost Amount.
+- Set Frost Amount temporarily to 0 and change Min Frost until you have the frost amount you want to be the minimum.
+- Set Frost Amount temporarily to 1 and change Max Frost until you have the frost amount you want to be the maximum.
+
+- Setting Min Frost and Max Frost is simply for convenience, changing the Frost Amount from 0 to 1 will actually cause it to go from Min Frost to Max Frost.
+  mostly usefull if you want to animate the Frost Amount (or change it dynamically from code).
+
+- You can look at the 2 camera prefabs for reference (FrostExampleCamera_sharp and FrostExampleCamera_smooth).
+
+
+UPDATE:
+Version 1.1
+
+Added Seethroughness and Distortion:
+-change the value of Seethroughness to determine how much you can see through the frost (obviously)
+-set a texture to use as normal map (included in this package) and set the distortion amount, this will distort the view through the frost (in the regions where frost isn't completely opaque)
+You can use these parameters to get a more melted frost effect 
+(look at the 3 camera prefabs for reference: FrostExampleCamera_sharp_OpaqueDistortion, FrostExampleCamera_sharp_TransparentDistortion and FrostExampleCamera_smooth_subtleDistortion)
