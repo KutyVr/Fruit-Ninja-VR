@@ -1,13 +1,14 @@
 # Fruit-Ninja-VR
 Fruit Ninja VR and Cake Ninja VR prototype
 
-
-Youtube Tutorial Step by step:
 https://youtu.be/IZNaNHCs46Q
 
+Youtube Tutorial Step by step.
 
 
 
+
+---------
 Assets:
 Ezy slice : 
 https://github.com/DavidArayan/ezy-slice
